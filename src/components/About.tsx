@@ -1,109 +1,126 @@
-import React, { useEffect, useState } from 'react';
-import styled from 'styled-components';
-import Typography from '@mui/material/Typography';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import Typist from 'react-typist';
-import ParticleComponent from './ParticleComponent';
-import UnstyledButtonCustom from './MeButton';
-
-const Container = styled.div`
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  height: 100vh;
-  display: flex;
-  padding: 5rem 2.25rem;
-  @media (min-width: 768px) {
-    flex-direction: row;
-  }
-  flex-direction: column;
-  align-items: center;
-`;
-
-const TextContainer = styled.div`
-  @media (min-width: 1024px) {
-    flex-grow: 1;
-    padding-right: 6rem;
-  }
-  @media (min-width: 768px) {
-    width: 50%;
-    padding-right: 4rem;
-    align-items: flex-start;
-    text-align: left;
-  }
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 4rem;
-  @media (min-width: 768px) {
-    margin-bottom: 0px;
-  }
-  align-items: center;
-  text-align: center;
-  z-index: 10;
-`;
-
-const meTitles = [
-  'LordRonzzzzz',
-  'LortRonzzzzyy',
-  'Webdev',
-];
+import React from 'react';
+import {
+  Box, Chip, Grid, Typography,
+} from '@mui/material';
+import styles from './About.module.css';
 
 const About = (): JSX.Element => {
-  const [isChanged, setIsChanged] = useState(true);
-  const [index, setIndex] = useState(0);
+  const techList = [
+    'C/C++',
+    'Python',
+    'PHP',
+    'Javascript',
+    'Typescript',
+    'SQL',
+    'MongoDB',
+    'Django',
+    'Go',
+    'HTML',
+    'CSS',
+    'Node.js',
+    'React.js',
+    'Nginx',
+    'Docker',
+    'OpenCV',
+    'Linux',
+    'Git',
+  ];
 
-  const meTypist = (
-    <Typist
-      avgTypingDelay={60}
-      onTypingDone={() => {
-        setIndex(index + 1 < meTitles.length ? index + 1 : 0);
-        setIsChanged(false);
-      }}
-    >
-      {meTitles[index]}
-      <Typist.Backspace
-        count={meTitles[index]?.length}
-        delay={500}
-      />
-    </Typist>
-  );
-
-  useEffect(() => {
-    setIsChanged(true);
-  }, [isChanged]);
+  const conceptList = [
+    'Data Structure',
+    'Object Oriented Programming',
+    'Design Pattern',
+    'Model View Controller',
+    'REST API',
+    'Reverse Proxy',
+    'Clean Architecture',
+    'Machine Learning',
+    'Image Processing',
+    'Computer Vision',
+  ];
 
   return (
-    <section id="about">
-      <ParticleComponent />
-      <Container>
-        <TextContainer>
-          <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
-            Hi, I&apos;m LordRonz.
-            <br className="hidden lg:inline-block" />
-            I love to build amazing apps.
-          </h1>
-          <Typography variant="h6" component="h4">
-            {isChanged ? meTypist : null}
-          </Typography>
-        </TextContainer>
-        <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-          <img
-            className="object-cover object-center rounded"
-            alt="hero"
-            src="./coding.svg"
-          />
-        </div>
-      </Container>
-      <div className="absolute bottom-0 left-1/2 text-3xl transform -translate-y-1/2 -translate-x-1/2">
-        <UnstyledButtonCustom ele={(
-          <span>
-            <ExpandMoreIcon />
-            LESGO
-          </span>
-        )}
-        />
-      </div>
-    </section>
+    <div id="about">
+      <Grid item xs={12}>
+        <Grid container style={{ padding: '2rem 64px' }}>
+          <Grid item lg={8} md={12}>
+            <Typography variant="h3" component="h4">
+              <Box fontWeight="fontWeightBold">Intro</Box>
+            </Typography>
+            <Typography variant="body1" component="span">
+              <Box>
+                Hi, I&apos;m Aaron Christopher, an undergraduate computer engineering
+                student.
+                I&apos;m a student at Institut Teknologi Sepuluh Nopember.
+                I always try to be honest and be kind to others.
+                Right now, I&apos;m looking for a new experience as part of being an
+                expert coder in the future.
+              </Box>
+            </Typography>
+          </Grid>
+        </Grid>
+      </Grid>
+
+      <Grid item xs={12}>
+        <Grid container style={{ padding: '2rem 64px' }}>
+          <Grid item xs={12}>
+            <Typography variant="h3" component="h4">
+              <Box fontWeight="fontWeightBold">Education</Box>
+            </Typography>
+            <Typography variant="h5" component="h6">
+              <Box fontWeight="fontWeightBold">
+                Institut Teknologi Sepuluh Nopember
+              </Box>
+            </Typography>
+            <Typography variant="body1" component="span">
+              <Box>June 2019 - August 2023 (Expected)</Box>
+            </Typography>
+            <Typography variant="body1" component="span">
+              <Box>Bachelor of Engineering in Computer Engineering Candidate</Box>
+            </Typography>
+          </Grid>
+        </Grid>
+      </Grid>
+
+      <Grid item xs={12}>
+        <Grid container style={{ padding: '2rem 64px' }}>
+          <Grid item xs={12}>
+            <Typography variant="h3" component="h4">
+              <Box fontWeight="fontWeightBold">Skills</Box>
+            </Typography>
+          </Grid>
+
+          <Grid item lg={6} md={12}>
+            <Grid container spacing={2}>
+              <Grid item xs={12}>
+                <Typography variant="h5" component="h6">
+                  <Box fontWeight="fontWeightBold">Tech</Box>
+                </Typography>
+              </Grid>
+              <Grid item lg={9} md={12}>
+                {techList.map((list) => (
+                  <Chip label={list} className={styles.skillsChip} />
+                ))}
+              </Grid>
+            </Grid>
+          </Grid>
+          <Grid item lg={6} md={12}>
+            <Grid container spacing={2}>
+              <Grid item xs={12}>
+                <Typography variant="h5" component="h6">
+                  <Box fontWeight="fontWeightBold">Programming Concept</Box>
+                </Typography>
+              </Grid>
+              <Grid item lg={9} md={12}>
+                {conceptList.map((list) => (
+                  <Chip label={list} className={styles.skillsChip} />
+                ))}
+              </Grid>
+            </Grid>
+          </Grid>
+        </Grid>
+      </Grid>
+    </div>
   );
 };
 
