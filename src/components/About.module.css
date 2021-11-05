@@ -1,0 +1,11 @@
+.skillsChip {
+  margin: 0.5rem 0.5rem;
+  color: #e22a25 !important;
+  fontWeight: 700;
+  textTransform: uppercase;
+}
+
+.skillsChip:hover {
+  background: #448 !important;
+  color: #ffffff;
+}
