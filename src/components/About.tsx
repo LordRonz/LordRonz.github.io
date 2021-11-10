@@ -1,8 +1,11 @@
-import React from 'react';
 import {
   Box, Chip, Grid, Typography,
 } from '@mui/material';
+import React from 'react';
+import { Link } from 'react-scroll';
+
 import styles from './About.module.css';
+import Container from './Container';
 
 const About = (): JSX.Element => {
   const techList = [
@@ -40,7 +43,7 @@ const About = (): JSX.Element => {
   ];
 
   return (
-    <div id="about">
+    <Container id="about" title="About me" subTitle="Amogus">
       <Grid item xs={12}>
         <Grid container style={{ padding: '2rem 64px' }}>
           <Grid item lg={8} md={12}>
@@ -54,7 +57,13 @@ const About = (): JSX.Element => {
                 I&apos;m a student at Institut Teknologi Sepuluh Nopember.
                 I always try to be honest and be kind to others.
                 Right now, I&apos;m looking for a new experience as part of being an
-                expert coder in the future.
+                expert coder in the Future.
+                {' '}
+                <Link to="contact" smooth>
+                  <span className="animated-underline link">Reach me out</span>
+                </Link>
+                {' '}
+                to talk more about my works!
               </Box>
             </Typography>
           </Grid>
@@ -120,7 +129,7 @@ const About = (): JSX.Element => {
           </Grid>
         </Grid>
       </Grid>
-    </div>
+    </Container>
   );
 };
 
