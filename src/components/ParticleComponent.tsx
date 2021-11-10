@@ -83,7 +83,7 @@ const ParticleComponent = (): JSX.Element => (
               enable: true,
               value_area: 800,
             },
-            value: 69,
+            value: 30,
           },
           opacity: {
             value: 0.5,

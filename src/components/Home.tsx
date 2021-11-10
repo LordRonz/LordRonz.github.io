@@ -1,12 +1,14 @@
-import React, { useEffect, useState } from 'react';
-import styled from 'styled-components';
-import { Typography, Box, Zoom } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import Typist from 'react-typist';
+import { Box, Typography, Zoom } from '@mui/material';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-scroll';
-import ParticleComponent from './ParticleComponent';
-import UnstyledButtonCustom from './MeButton';
+import Typist from 'react-typist';
+import styled from 'styled-components';
+
+import hero from '../assets/steph.jpg';
 import style from './Home.module.css';
+import UnstyledButtonCustom from './MeButton';
+import ParticleComponent from './ParticleComponent';
 
 const Container = styled.div`
   width: 100%;
@@ -88,20 +90,26 @@ const Home = (): JSX.Element => {
             </Typography>
           </TextContainer>
         </Zoom>
-        <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-          <img
-            className="object-cover object-center rounded"
-            alt="hero"
-            src="./coding.svg"
-          />
+        <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 flex">
+          <figure className="ml-6 w-36 md:w-52 z-10">
+            <img
+              className="object-cover object-center rounded"
+              alt="hero"
+              src={hero}
+            />
+          </figure>
         </div>
       </Container>
       <div className="absolute bottom-0 left-1/2 text-3xl transform -translate-y-1/2 -translate-x-1/2">
         <Link to="about" smooth>
           <UnstyledButtonCustom ele={(
             <span>
-              <ExpandMoreIcon />
-              LESGO
+              <Typography>
+                <Box fontWeight="fontWeightBold">
+                  <ExpandMoreIcon />
+                  LESGO
+                </Box>
+              </Typography>
             </span>
           )}
           />
