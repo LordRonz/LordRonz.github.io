@@ -43,7 +43,7 @@ const About = (): JSX.Element => {
   ];
 
   return (
-    <Container id="about" title="About me" subTitle="Amogus">
+    <Container id="about" title="About me" subTitle="What a chad">
       <Grid item xs={12}>
         <Grid container style={{ padding: '2rem 64px' }}>
           <Grid item lg={8} md={12}>
