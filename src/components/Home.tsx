@@ -47,9 +47,11 @@ const TextContainer = styled.div`
 `;
 
 const meTitles = [
-  'LordRonzzzzz',
-  'LortRonzzzzyy',
-  'Webdev',
+  'Undergraduate Student',
+  'Wee',
+  'Web Developer',
+  'Backend Engineer',
+  'Python Enthusiast',
 ];
 
 const Home = (): JSX.Element => {
@@ -83,19 +85,26 @@ const Home = (): JSX.Element => {
         <Zoom in style={{ transitionDelay: '200ms' }}>
           <TextContainer>
             <Typography variant="h3" component="h2">
-              <Box fontWeight="fontWeightBold">Hi, I&apos;m LordRonz.</Box>
+              <Box fontWeight="fontWeightBold">
+                Hi, I&apos;m
+                {' '}
+                <span style={{ color: '#eb2754' }}>Aaron</span>
+                .
+              </Box>
             </Typography>
             <Typography variant="h6" component="h4">
               {isChanged ? meTypist : null}
             </Typography>
           </TextContainer>
         </Zoom>
-        <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 flex">
-          <figure className="ml-6 w-36 md:w-52 z-10">
+        <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 flex justify-center">
+          <figure className="w-36 md:w-52 z-10">
             <img
               className="object-cover object-center rounded"
               alt="hero"
               src={hero}
+              width="300"
+              height="465"
             />
           </figure>
         </div>

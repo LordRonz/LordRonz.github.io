@@ -1,12 +1,13 @@
 import './App.css';
 import './styles/globals.css';
 
-import React from 'react';
+import React, { Suspense } from 'react';
 import { Helmet } from 'react-helmet';
 
-import About from './components/About';
-import Footer from './components/Footer';
 import Home from './components/Home';
+
+const About = React.lazy(() => import('./components/About'));
+const Footer = React.lazy(() => import('./components/Footer'));
 
 const App = (): JSX.Element => (
   <div className="App text-gray-400 bg-gray-900 body-font">
@@ -14,8 +15,10 @@ const App = (): JSX.Element => (
       <title>Aaron Christopher</title>
     </Helmet>
     <Home />
-    <About />
-    <Footer />
+    <Suspense fallback={<div>Loading...</div>}>
+      <About />
+      <Footer />
+    </Suspense>
   </div>
 );
 
