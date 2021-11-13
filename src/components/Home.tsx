@@ -1,5 +1,8 @@
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import { Box, Typography, Zoom } from '@mui/material';
+import {
+  Box, Button, Link as LinkMui, Typography, Zoom,
+} from '@mui/material';
+import { createTheme, responsiveFontSizes, ThemeProvider } from '@mui/material/styles';
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-scroll';
 import Typist from 'react-typist';
@@ -54,6 +57,19 @@ const meTitles = [
   'Python Enthusiast',
 ];
 
+const cvButtonStyle = {
+  backgroundColor: '#992323',
+  color: '#ddd',
+  '&:hover': {
+    backgroundColor: '#eb2754',
+    color: '#000',
+  },
+  marginTop: '5%',
+};
+
+let typoTheme = createTheme();
+typoTheme = responsiveFontSizes(typoTheme);
+
 const Home = (): JSX.Element => {
   const [isChanged, setIsChanged] = useState(true);
   const [index, setIndex] = useState(0);
@@ -84,17 +100,30 @@ const Home = (): JSX.Element => {
       <Container>
         <Zoom in style={{ transitionDelay: '200ms' }}>
           <TextContainer>
-            <Typography variant="h3" component="h2">
-              <Box fontWeight="fontWeightBold">
-                Hi, I&apos;m
-                {' '}
-                <span style={{ color: '#eb2754' }}>Aaron</span>
-                .
-              </Box>
-            </Typography>
-            <Typography variant="h6" component="h4">
-              {isChanged ? meTypist : null}
-            </Typography>
+            <ThemeProvider theme={typoTheme}>
+              <Typography variant="h3" component="h2">
+                <Box fontWeight="fontWeightBold">
+                  Hi, I&apos;m
+                  {' '}
+                  <span style={{ color: '#eb2754' }}>Aaron</span>
+                  .
+                </Box>
+              </Typography>
+              <Typography variant="h6" component="h3">
+                {isChanged ? meTypist : null}
+              </Typography>
+            </ThemeProvider>
+            <Button variant="outlined" sx={cvButtonStyle}>
+              <LinkMui
+                href="cv.pdf"
+                rel="noopener"
+                color="inherit"
+                underline="none"
+                target="_blank"
+              >
+                See My CV
+              </LinkMui>
+            </Button>
           </TextContainer>
         </Zoom>
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 flex justify-center">
