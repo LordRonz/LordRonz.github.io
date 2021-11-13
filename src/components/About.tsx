@@ -76,7 +76,7 @@ const About = (): JSX.Element => {
             <Typography variant="h3" component="h4">
               <Box fontWeight="fontWeightBold">Education</Box>
             </Typography>
-            <Typography variant="h5" component="h6">
+            <Typography variant="h5" component="h5">
               <Box fontWeight="fontWeightBold">
                 Institut Teknologi Sepuluh Nopember
               </Box>
@@ -102,7 +102,7 @@ const About = (): JSX.Element => {
           <Grid item lg={6} md={12}>
             <Grid container spacing={2}>
               <Grid item xs={12}>
-                <Typography variant="h5" component="h6">
+                <Typography variant="h5" component="h5">
                   <Box fontWeight="fontWeightBold">Tech</Box>
                 </Typography>
               </Grid>
