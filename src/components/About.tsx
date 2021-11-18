@@ -59,7 +59,7 @@ const About = (): JSX.Element => {
                 Right now, I&apos;m looking for a new experience as part of being an
                 expert coder in the Future.
                 {' '}
-                <Link to="contact" smooth>
+                <Link to="contact" smooth spy hashSpy href="#contact">
                   <span className="animated-underline link">Reach me out</span>
                 </Link>
                 {' '}
