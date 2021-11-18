@@ -139,7 +139,7 @@ const Home = (): JSX.Element => {
         </div>
       </Container>
       <div className="absolute bottom-0 left-1/2 text-3xl transform -translate-y-1/2 -translate-x-1/2">
-        <Link to="about" smooth>
+        <Link to="about" smooth spy hashSpy href="#about">
           <UnstyledButtonCustom ele={(
             <span>
               <Typography>
