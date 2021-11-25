@@ -2,6 +2,7 @@ import './index.css';
 
 import React from 'react';
 import { hydrate, render } from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
 
 import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -11,14 +12,18 @@ const rootElement = document.getElementById('root');
 if (rootElement?.hasChildNodes()) {
   hydrate(
     <React.StrictMode>
-      <App />
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
     </React.StrictMode>,
     rootElement,
   );
 } else {
   render(
     <React.StrictMode>
-      <App />
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
     </React.StrictMode>,
     rootElement,
   );

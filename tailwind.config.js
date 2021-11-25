@@ -6,6 +6,10 @@ module.exports = {
       zIndex: {
         '-69': '-69',
       },
+      colors: {
+        'lrred': '#eb2754',
+        'lrtext-white': '#ddd',
+      }
     },
   },
   variants: {
