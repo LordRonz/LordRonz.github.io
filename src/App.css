@@ -1,4 +1,5 @@
 .Typist .Cursor {
+  color: #eb2754;
   display: inline-block; }
   .Typist .Cursor--blinking {
     opacity: 1;
