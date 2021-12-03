@@ -9,7 +9,7 @@ import Typist from 'react-typist';
 const NotFoundPage = (): JSX.Element => (
   <>
     <Helmet>
-      <title>Aaron Christopher</title>
+      <title>Page not found | LordRonz</title>
     </Helmet>
     <main className="text-lrtext-white bg-gray-900 body-font">
       <Grid container className="flex-grow h-screen items-center text-center bg-mblack justify-center" id="home">
