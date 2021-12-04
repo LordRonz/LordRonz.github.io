@@ -1,11 +1,13 @@
 import React from 'react';
 import Particles from 'react-tsparticles';
 
+import style from './ParticleComponent.module.css';
+
 const ParticleComponent = (): JSX.Element => (
-  <div className="absolute top-0 left-0 w-full">
+  <div className="absolute top-0 left-0 w-full h-screen">
     <Particles
       id="tsparticles"
-      className="w-full h-screen"
+      canvasClassName={style.particle}
       options={{
         background: {
           color: {
@@ -41,9 +43,9 @@ const ParticleComponent = (): JSX.Element => (
             grab: {
               links: {
                 blink: true,
-                color: '#6cff47',
+                color: '#690000',
                 consent: true,
-                opacity: 1,
+                opacity: 0.8,
               },
               distance: 169,
             },

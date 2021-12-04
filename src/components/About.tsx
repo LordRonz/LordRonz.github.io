@@ -108,7 +108,7 @@ const About = (): JSX.Element => {
               </Grid>
               <Grid item lg={9} md={12}>
                 {techList.map((list) => (
-                  <Chip label={list} className={styles.skillsChip} />
+                  <Chip label={list} className={styles.skillsChip} key={list} />
                 ))}
               </Grid>
             </Grid>
@@ -122,7 +122,7 @@ const About = (): JSX.Element => {
               </Grid>
               <Grid item lg={9} md={12}>
                 {conceptList.map((list) => (
-                  <Chip label={list} className={styles.skillsChip} />
+                  <Chip label={list} className={styles.skillsChip} key={list} />
                 ))}
               </Grid>
             </Grid>
