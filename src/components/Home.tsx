@@ -11,7 +11,6 @@ import styled from 'styled-components';
 import hero from '../assets/steph.jpg';
 import style from './Home.module.css';
 import UnstyledButtonCustom from './MeButton';
-import ParticleComponent from './ParticleComponent';
 
 const Container = styled.div`
   width: 100%;
@@ -96,7 +95,6 @@ const Home = (): JSX.Element => {
 
   return (
     <section id="home" className={style.home}>
-      <ParticleComponent />
       <Container>
         <Zoom in style={{ transitionDelay: '200ms' }}>
           <TextContainer>

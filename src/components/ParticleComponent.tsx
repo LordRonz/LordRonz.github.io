@@ -98,7 +98,6 @@ const ParticleComponent = (): JSX.Element => (
             value: 5,
           },
         },
-        detectRetina: true,
       }}
     />
   </div>
