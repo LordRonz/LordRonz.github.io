@@ -6,7 +6,7 @@
   "dependencies": {
     "@craco/craco": "^6.4.2",
     "@emotion/react": "^11.5.0",
-    "@emotion/styled": "^11.3.0",
+    "@emotion/styled": "^11.6.0",
     "@mui/core": "^5.0.0-alpha.53",
     "@mui/icons-material": "^5.0.5",
     "@mui/material": "^5.0.6",
