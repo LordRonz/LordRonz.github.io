@@ -23,14 +23,14 @@ const Contact = (): JSX.Element => {
     <Grid container direction="row" justifyContent="center" alignItems="center" spacing={3} id="contact">
       <Grid item>
         <Link href={github} target="_blank" rel="noopener" aria-label="Twitter">
-          <IconContext.Provider value={{ size: '2em', style: { cursor: 'ne-resize' } }}>
+          <IconContext.Provider value={{ size: '2em', style: { cursor: 'pointer' } }}>
             <SiGithub className={style.socialIcon} />
           </IconContext.Provider>
         </Link>
       </Grid>
       <Grid item>
         <Link href={linkedin} target="_blank" rel="noopener" aria-label="Twitter">
-          <IconContext.Provider value={{ size: '2em', style: { cursor: 'ne-resize' } }}>
+          <IconContext.Provider value={{ size: '2em', style: { cursor: 'pointer' } }}>
             <SiLinkedin className={style.socialIcon} />
           </IconContext.Provider>
         </Link>
