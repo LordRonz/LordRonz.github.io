@@ -80,7 +80,7 @@
     "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-react-hooks": "^4.2.0",
     "eslint-plugin-simple-import-sort": "^7.0.0",
-    "postcss": "^8.3.11",
+    "postcss": "^8.4.4",
     "react-snap": "^1.23.0",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat"
   },
