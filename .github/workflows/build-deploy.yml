@@ -14,34 +14,34 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+      - name: Checkout code
+        uses: actions/checkout@v2
 
-    - name: Install Node.js
-      uses: actions/setup-node@v1
-      with:
-        node-version: 16.x
+      - name: Install Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 16.x
 
-    - name: Install Yarn
-      run: npm install -g yarn
+      - name: Install Yarn
+        run: npm install -g yarn
 
-    - name: Install Packages
-      run: yarn install --frozen-lockfile
+      - name: Install Packages
+        run: yarn install --frozen-lockfile
 
-    - name: Build project
-      run: yarn build
+      - name: Build project
+        run: yarn build
 
-    # - name: Run tests
-    #   run: npm run test
+      # - name: Run tests
+      #   run: npm run test
 
-    - name: Export project
-      run: yarn export
+      - name: Export project
+        run: yarn export
 
-    - name: Upload production-ready build files
-      uses: actions/upload-artifact@v2
-      with:
-        name: production-files
-        path: ./out
+      - name: Upload production-ready build files
+        uses: actions/upload-artifact@v2
+        with:
+          name: production-files
+          path: ./out
 
   deploy:
     name: Deploy
@@ -50,14 +50,14 @@ jobs:
     if: github.ref == 'refs/heads/main'
 
     steps:
-    - name: Download artifact
-      uses: actions/download-artifact@v2
-      with:
-        name: production-files
-        path: ./out
+      - name: Download artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: production-files
+          path: ./out
 
-    - name: Deploy to gh-pages
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./out
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./out

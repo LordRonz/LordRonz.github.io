@@ -4,7 +4,13 @@ import React from 'react';
 import Contact from '@/components/Contact';
 
 const Footer = (): JSX.Element => (
-  <Grid container className="flex-grow py-4 text-lrtext-white" spacing={0} sx={{ borderTop: 1, borderColor: '#eb2754' }} gap={2}>
+  <Grid
+    container
+    className="flex-grow py-4 text-lrtext-white"
+    spacing={0}
+    sx={{ borderTop: 1, borderColor: '#eb2754' }}
+    gap={2}
+  >
     <Grid item xs={12}>
       <Grid container justifyContent="center">
         <Grid item>
@@ -22,9 +28,7 @@ const Footer = (): JSX.Element => (
         <Grid item>
           <Typography component="span">
             <Box textAlign="center" fontWeight="light" fontSize={14}>
-              © Aaron Christopher
-              {' '}
-              {new Date().getFullYear()}
+              © Aaron Christopher {new Date().getFullYear()}
             </Box>
           </Typography>
         </Grid>

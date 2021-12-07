@@ -1,12 +1,10 @@
-import {
-  Box, Chip, Grid, Typography,
-} from '@mui/material';
+import { Box, Chip, Grid, Typography } from '@mui/material';
 import React from 'react';
 import { Link } from 'react-scroll';
 
 import Container from '@/components/layout/Container';
 
-const MeChip = ({ label }: { label: string} ) => (
+const MeChip = ({ label }: { label: string }) => (
   <Chip
     label={label}
     sx={{
@@ -16,8 +14,9 @@ const MeChip = ({ label }: { label: string} ) => (
       textTransform: 'uppercase',
       '&:hover': {
         backgroundColor: '#444',
-      }
-    }} />
+      },
+    }}
+  />
 );
 
 const About = (): JSX.Element => {
@@ -65,17 +64,12 @@ const About = (): JSX.Element => {
             </Typography>
             <Typography variant="body1" component="span">
               <Box>
-                Hi, I&apos;m Aaron Christopher, an undergraduate computer engineering
-                student.
-                I&apos;m a student at Institut Teknologi Sepuluh Nopember.
-                I always try to be honest and be kind to others.
-                Right now, I&apos;m looking for a new experience as part of being an
-                expert coder in the Future.
-                {' '}
+                Hi, I&apos;m Aaron Christopher, an undergraduate computer engineering student. I&apos;m a student at Institut
+                Teknologi Sepuluh Nopember. I always try to be honest and be kind to others. Right now, I&apos;m looking for
+                a new experience as part of being an expert coder in the Future.{' '}
                 <Link to="contact" smooth spy hashSpy href="#contact" className="animated-underline link pb-0.5">
                   Reach me out
-                </Link>
-                {' '}
+                </Link>{' '}
                 to talk more about my works!
               </Box>
             </Typography>
@@ -90,9 +84,7 @@ const About = (): JSX.Element => {
               <Box fontWeight="fontWeightBold">Education</Box>
             </Typography>
             <Typography variant="h5" component="h5">
-              <Box fontWeight="fontWeightBold">
-                Institut Teknologi Sepuluh Nopember
-              </Box>
+              <Box fontWeight="fontWeightBold">Institut Teknologi Sepuluh Nopember</Box>
             </Typography>
             <Typography variant="body1" component="span">
               <Box>June 2019 - August 2023 (Expected)</Box>
@@ -121,9 +113,7 @@ const About = (): JSX.Element => {
               </Grid>
               <Grid item lg={9} md={12}>
                 {techList.map((list) => (
-                  <MeChip
-                    label={list}
-                    key={list} />
+                  <MeChip label={list} key={list} />
                 ))}
               </Grid>
             </Grid>
@@ -137,9 +127,7 @@ const About = (): JSX.Element => {
               </Grid>
               <Grid item lg={9} md={12}>
                 {conceptList.map((list) => (
-                  <MeChip
-                    label={list}
-                    key={list} />
+                  <MeChip label={list} key={list} />
                 ))}
               </Grid>
             </Grid>

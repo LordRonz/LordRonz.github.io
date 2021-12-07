@@ -1,18 +1,12 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable react/jsx-props-no-spreading */
 /* eslint-disable @typescript-eslint/ban-types */
-import ButtonUnstyled, {
-  buttonUnstyledClasses,
-  ButtonUnstyledProps,
-} from '@mui/core/ButtonUnstyled';
+import ButtonUnstyled, { buttonUnstyledClasses, ButtonUnstyledProps } from '@mui/core/ButtonUnstyled';
 import { styled, Theme } from '@mui/system';
 import PropTypes from 'prop-types';
 import * as React from 'react';
 
-const ButtonRoot = React.forwardRef(function BtnRoot(
-  props: React.PropsWithChildren<{}>,
-  ref: React.ForwardedRef<any>,
-) {
+const ButtonRoot = React.forwardRef(function BtnRoot(props: React.PropsWithChildren<{}>, ref: React.ForwardedRef<any>) {
   const { children, ...other } = props;
 
   return (
@@ -30,19 +24,9 @@ const CustomButtonRoot = styled(ButtonRoot)(
   ({ theme }: { theme: Theme }) => `
   overflow: visible;
   cursor: pointer;
-  --main-color: ${
-  theme.palette.mode === 'light' ? 'rgb(235,39,84)' : 'rgb(235,39,84)'
-};
-  --hover-color: ${
-  theme.palette.mode === 'light'
-    ? 'rgba(255,0,255,0.2)'
-    : 'rgba(144,202,249,0.08)'
-};
-  --active-color: ${
-  theme.palette.mode === 'light'
-    ? 'rgba(25,118,210,0.12)'
-    : 'rgba(144,202,249,0.24)'
-};
+  --main-color: ${theme.palette.mode === 'light' ? 'rgb(235,39,84)' : 'rgb(235,39,84)'};
+  --hover-color: ${theme.palette.mode === 'light' ? 'rgba(255,0,255,0.2)' : 'rgba(144,202,249,0.08)'};
+  --active-color: ${theme.palette.mode === 'light' ? 'rgba(25,118,210,0.12)' : 'rgba(144,202,249,0.24)'};
 
   & polygon {
     fill: transparent;
@@ -106,19 +90,14 @@ const CustomButtonRoot = styled(ButtonRoot)(
     & svg {
       margin: 0 5px;
     }
-  }`,
+  }`
 );
 
-const SvgButton = React.forwardRef(function Svg(
-  props: ButtonUnstyledProps,
-  ref: React.ForwardedRef<any>,
-) {
+const SvgButton = React.forwardRef(function Svg(props: ButtonUnstyledProps, ref: React.ForwardedRef<any>) {
   return <ButtonUnstyled {...props} component={CustomButtonRoot} ref={ref} />;
 });
 
-export default function UnstyledButtonCustom(
-  props: { ele: React.ReactNode },
-): JSX.Element {
+export default function UnstyledButtonCustom(props: { ele: React.ReactNode }): JSX.Element {
   const { ele } = props;
   return <SvgButton>{ele}</SvgButton>;
 }
