@@ -1,11 +1,10 @@
 import { Box, Grid, Typography } from '@mui/material';
 import React from 'react';
 
-import Contact from './Contact';
-import style from './Footer.module.css';
+import Contact from '@/components/Contact';
 
 const Footer = (): JSX.Element => (
-  <Grid container className={style.root} spacing={0} sx={{ borderTop: 1, borderColor: '#eb2754' }} gap={2}>
+  <Grid container className="flex-grow py-4 text-lrtext-white" spacing={0} sx={{ borderTop: 1, borderColor: '#eb2754' }} gap={2}>
     <Grid item xs={12}>
       <Grid container justifyContent="center">
         <Grid item>

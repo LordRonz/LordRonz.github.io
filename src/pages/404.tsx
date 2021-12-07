@@ -1,18 +1,17 @@
+import { ReactTypical } from '@deadcoder0904/react-typical';
 import {
   Box, Grid, Typography, Zoom,
 } from '@mui/material';
-import React from 'react';
-import { Helmet } from 'react-helmet';
-import { Link } from 'react-router-dom';
-import Typist from 'react-typist';
+import type { NextPage } from 'next';
+import Link from 'next/link';
 
-const NotFoundPage = (): JSX.Element => (
-  <>
-    <Helmet>
-      <title>Page not found | LordRonz</title>
-    </Helmet>
-    <main className="text-lrtext-white bg-gray-900 body-font">
-      <Grid container className="flex-grow h-screen items-center text-center bg-mblack justify-center" id="home">
+import Seo from '@/components/Seo';
+
+const PageNotFound: NextPage = () => {
+  return (
+    <div className="text-lrtext-white bg-gray-900 body-font">
+      <Seo templateTitle='Page not found | LordRonz' />
+      <Grid container className="flex-grow h-screen items-center text-center justify-center">
         <Grid item xs={12}>
           <Grid container justifyContent="center">
             <Zoom in style={{ transitionDelay: '200ms' }}>
@@ -25,9 +24,11 @@ const NotFoundPage = (): JSX.Element => (
                   component="h2"
                   className="text-lrrwhite"
                 >
-                  <Typist startDelay={300} avgTypingDelay={80}>
-                    Page Not Found
-                  </Typist>
+                  <ReactTypical
+                    steps={['Page Not Found']}
+                    wrapper="p"
+                    className="typicalWrapper"
+                  />
                 </Typography>
               </Grid>
             </Zoom>
@@ -36,15 +37,17 @@ const NotFoundPage = (): JSX.Element => (
         <Grid item justifyContent="center">
           <Typography variant="h6" component="h3" className="text-lrred">
             <Box fontWeight="fontWeightBold">
-              <Link to="/">
-                <span className="animated-underline link">Back to Home</span>
+              <Link href="/">
+                <a>
+                  <span className="animated-underline link pb-0.5">Back to Home</span>
+                </a>
               </Link>
             </Box>
           </Typography>
         </Grid>
       </Grid>
-    </main>
-  </>
-);
+    </div>
+  );
+};
 
-export default NotFoundPage;
+export default PageNotFound;

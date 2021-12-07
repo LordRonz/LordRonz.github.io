@@ -1,2 +1,3 @@
-craco.config.[jt]s
-tailwind.config.js
+node_modules
+bin
+.next

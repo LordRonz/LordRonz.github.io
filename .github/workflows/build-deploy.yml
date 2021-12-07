@@ -34,11 +34,14 @@ jobs:
     # - name: Run tests
     #   run: npm run test
 
+    - name: Export project
+      run: yarn export
+
     - name: Upload production-ready build files
       uses: actions/upload-artifact@v2
       with:
         name: production-files
-        path: ./build
+        path: ./out
 
   deploy:
     name: Deploy
@@ -51,10 +54,10 @@ jobs:
       uses: actions/download-artifact@v2
       with:
         name: production-files
-        path: ./build
+        path: ./out
 
     - name: Deploy to gh-pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./build
+        publish_dir: ./out
