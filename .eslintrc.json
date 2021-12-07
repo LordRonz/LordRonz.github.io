@@ -1,32 +1,21 @@
 {
-  "env": {
-    "browser": true,
-    "es2021": true
-  },
   "extends": [
-    "plugin:react/recommended",
-    "airbnb",
-    "airbnb-typescript",
     "eslint:recommended",
+    "next",
+    "next/core-web-vitals",
     "plugin:@typescript-eslint/eslint-recommended",
-    "plugin:@typescript-eslint/recommended"
-  ],
-  "parser": "@typescript-eslint/parser",
-  "parserOptions": {
-    "ecmaFeatures": {
-      "jsx": true
-    },
-    "ecmaVersion": 12,
-    "sourceType": "module",
-    "project": "./tsconfig.json"
-  },
-  "plugins": [
-    "react",
-    "@typescript-eslint",
-    "simple-import-sort"
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
   ],
   "rules": {
     "simple-import-sort/imports": "error",
-    "simple-import-sort/exports": "error"
-  }
+    "simple-import-sort/exports": "error",
+    "@next/next/no-img-element": "off",
+    "@typescript-eslint/semi": "error"
+  },
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint",
+    "simple-import-sort"
+  ]
 }

@@ -4,8 +4,6 @@ import {
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import style from './Container.module.css';
-
 interface ComponentProp {
   id: string,
   title: string,
@@ -18,7 +16,7 @@ const Container = ({
 }: ComponentProp): JSX.Element => (
   <Grid
     container
-    className={style.root}
+    className="flex-grow py-12 text-lrtext-white"
     spacing={0}
     id={id}
   >

@@ -10,8 +10,6 @@ import { IconContext } from 'react-icons';
 import { FiMail } from 'react-icons/fi';
 import { SiGithub, SiLinkedin } from 'react-icons/si';
 
-import style from './Contact.module.css';
-
 const github = 'https://github.com/LordRonz';
 const mail = 'christopher.19072@mhs.its.ac.id';
 const linkedin = 'https://www.linkedin.com/in/aaronchristopher69/';
@@ -24,14 +22,14 @@ const Contact = (): JSX.Element => {
       <Grid item>
         <Link href={github} target="_blank" rel="noopener" aria-label="Twitter">
           <IconContext.Provider value={{ size: '2em', style: { cursor: 'pointer' } }}>
-            <SiGithub className={style.socialIcon} />
+            <SiGithub className="text-lrtext-white transition-all duration-300 hover:text-lrred" />
           </IconContext.Provider>
         </Link>
       </Grid>
       <Grid item>
         <Link href={linkedin} target="_blank" rel="noopener" aria-label="Twitter">
           <IconContext.Provider value={{ size: '2em', style: { cursor: 'pointer' } }}>
-            <SiLinkedin className={style.socialIcon} />
+            <SiLinkedin className="text-lrtext-white transition-all duration-300 hover:text-lrred" />
           </IconContext.Provider>
         </Link>
       </Grid>
@@ -43,7 +41,7 @@ const Contact = (): JSX.Element => {
           content={(
             <span className="inline-flex flex-col items-center p-2 bg-dark rounded-md shadow-md border-thin">
               { copyStatus }
-              <span className="inline-block font-bold" style={{ color: '#eb2754' }}>
+              <span className="inline-block font-bold text-lrred">
                 { mail }
               </span>
             </span>
@@ -62,7 +60,7 @@ const Contact = (): JSX.Element => {
             >
               <span>
                 <IconContext.Provider value={{ size: '2.3em', style: { cursor: 'pointer' } }}>
-                  <FiMail className={style.socialIcon} />
+                  <FiMail className="text-lrtext-white transition-all duration-300 hover:text-lrred" />
                 </IconContext.Provider>
               </span>
             </CopyToClipboard>

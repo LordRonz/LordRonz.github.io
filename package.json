@@ -1,93 +1,50 @@
 {
-  "name": "coba-react-ngab",
-  "version": "0.1.0",
-  "homepage": "https://lordronz.github.io/",
+  "name": "nextjs-boilerplate",
   "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "export": "next export",
+    "start": "next start",
+    "lint": "next lint"
+  },
   "dependencies": {
-    "@craco/craco": "^6.4.2",
-    "@emotion/react": "^11.7.0",
+    "@deadcoder0904/react-typical": "^0.1.2",
+    "@emotion/react": "^11.5.0",
     "@emotion/styled": "^11.3.0",
     "@mui/core": "^5.0.0-alpha.53",
     "@mui/icons-material": "^5.0.5",
     "@mui/material": "^5.1.0",
     "@mui/system": "^5.0.6",
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
     "@tippyjs/react": "^4.2.6",
-    "@types/jest": "^26.0.15",
-    "@types/node": "^12.20.37",
-    "@types/prop-types": "^15.7.4",
-    "@types/react": "^17.0.37",
-    "@types/react-copy-to-clipboard": "^5.0.2",
-    "@types/react-dom": "^17.0.11",
-    "@types/react-helmet": "^6.1.4",
-    "@types/react-scroll": "^1.8.3",
-    "@types/react-typist": "^2.0.3",
-    "@types/styled-components": "^5.1.16",
-    "prop-types": "^15.7.2",
-    "react": "^17.0.2",
+    "next": "12.0.3",
+    "preact": "^10.6.2",
+    "react": "17.0.2",
     "react-copy-to-clipboard": "^5.0.4",
-    "react-dom": "^17.0.2",
-    "react-helmet": "^6.1.0",
+    "react-dom": "17.0.2",
     "react-icons": "^4.3.1",
-    "react-router": "^6.0.2",
-    "react-router-dom": "6",
-    "react-scripts": "4.0.3",
     "react-scroll": "^1.8.4",
     "react-tsparticles": "^1.37.3",
     "react-typist": "^2.0.5",
-    "styled-components": "^5.3.3",
-    "tippy.js": "^6.3.7",
-    "typescript": "^4.5.2",
-    "web-vitals": "^1.0.1"
-  },
-  "scripts": {
-    "start": "craco start",
-    "build": "craco build",
-    "postbuild": "react-snap",
-    "test": "craco test",
-    "eject": "react-scripts eject",
-    "lint:fix": "eslint src --fix"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "tippy.js": "^6.3.7"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.33.0",
-    "@typescript-eslint/parser": "^4.33.0",
-    "autoprefixer": "^9",
-    "eslint": "^7.32.0",
-    "eslint-config-airbnb": "^18.2.1",
-    "eslint-config-airbnb-typescript": "^12.3.1",
-    "eslint-plugin-import": "^2.25.3",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-react": "^7.24.0",
-    "eslint-plugin-react-hooks": "^4.3.0",
+    "@types/node": "16.11.7",
+    "@types/react": "17.0.34",
+    "@types/react-copy-to-clipboard": "^5.0.2",
+    "@types/react-scroll": "^1.8.3",
+    "@types/react-typist": "^2.0.3",
+    "@types/styled-components": "^5.1.16",
+    "@typescript-eslint/eslint-plugin": "^5.3.1",
+    "@typescript-eslint/parser": "^5.3.1",
+    "autoprefixer": "^10.4.0",
+    "eslint": "7",
+    "eslint-config-next": "12.0.3",
+    "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-simple-import-sort": "^7.0.0",
-    "postcss": "^8.3.11",
-    "react-snap": "^1.23.0",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat"
-  },
-  "reactSnap": {
-    "include": [
-      "/",
-      "/404.html"
-    ]
+    "postcss": "^8.4.4",
+    "prettier": "^2.4.1",
+    "tailwindcss": "^2.2.19",
+    "typescript": "4.4.4"
   }
 }

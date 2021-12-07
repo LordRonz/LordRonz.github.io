@@ -4,8 +4,21 @@ import {
 import React from 'react';
 import { Link } from 'react-scroll';
 
-import styles from './About.module.css';
-import Container from './Container';
+import Container from '@/components/layout/Container';
+
+const MeChip = ({ label }: { label: string} ) => (
+  <Chip
+    label={label}
+    sx={{
+      margin: '0.5rem 0.5rem',
+      color: '#ee6969',
+      fontWeight: 700,
+      textTransform: 'uppercase',
+      '&:hover': {
+        backgroundColor: '#444',
+      }
+    }} />
+);
 
 const About = (): JSX.Element => {
   const techList = [
@@ -59,8 +72,8 @@ const About = (): JSX.Element => {
                 Right now, I&apos;m looking for a new experience as part of being an
                 expert coder in the Future.
                 {' '}
-                <Link to="contact" smooth spy hashSpy href="#contact">
-                  <span className="animated-underline link">Reach me out</span>
+                <Link to="contact" smooth spy hashSpy href="#contact" className="animated-underline link pb-0.5">
+                  Reach me out
                 </Link>
                 {' '}
                 to talk more about my works!
@@ -108,7 +121,9 @@ const About = (): JSX.Element => {
               </Grid>
               <Grid item lg={9} md={12}>
                 {techList.map((list) => (
-                  <Chip label={list} className={styles.skillsChip} key={list} />
+                  <MeChip
+                    label={list}
+                    key={list} />
                 ))}
               </Grid>
             </Grid>
@@ -122,7 +137,9 @@ const About = (): JSX.Element => {
               </Grid>
               <Grid item lg={9} md={12}>
                 {conceptList.map((list) => (
-                  <Chip label={list} className={styles.skillsChip} key={list} />
+                  <MeChip
+                    label={list}
+                    key={list} />
                 ))}
               </Grid>
             </Grid>

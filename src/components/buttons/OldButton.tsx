@@ -9,10 +9,10 @@ import { styled, Theme } from '@mui/system';
 import PropTypes from 'prop-types';
 import * as React from 'react';
 
-const ButtonRoot = React.forwardRef((
+const ButtonRoot = React.forwardRef(function BtnRoot(
   props: React.PropsWithChildren<{}>,
   ref: React.ForwardedRef<any>,
-) => {
+) {
   const { children, ...other } = props;
 
   return (
@@ -109,10 +109,12 @@ const CustomButtonRoot = styled(ButtonRoot)(
   }`,
 );
 
-const SvgButton = React.forwardRef((
+const SvgButton = React.forwardRef(function Svg(
   props: ButtonUnstyledProps,
   ref: React.ForwardedRef<any>,
-) => <ButtonUnstyled {...props} component={CustomButtonRoot} ref={ref} />);
+) {
+  return <ButtonUnstyled {...props} component={CustomButtonRoot} ref={ref} />;
+});
 
 export default function UnstyledButtonCustom(
   props: { ele: React.ReactNode },
