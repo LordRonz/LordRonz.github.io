@@ -1,21 +1,13 @@
 import { ReactTypical } from '@deadcoder0904/react-typical';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import {
-  Box, Button, Link as LinkMui, Typography, Zoom,
-} from '@mui/material';
+import { Box, Button, Link as LinkMui, Typography, Zoom } from '@mui/material';
 import { createTheme, responsiveFontSizes, ThemeProvider } from '@mui/material/styles';
 import React from 'react';
 import { Link } from 'react-scroll';
 
 import MeButton from '@/components/buttons/MeButton';
 
-const meTitles = [
-  'Undergraduate Student',
-  'Wee',
-  'Web Developer',
-  'Backend Engineer',
-  'Python Enthusiast',
-];
+const meTitles = ['Undergraduate Student', 'Wee', 'Web Developer', 'Backend Engineer', 'Python Enthusiast'];
 
 const cvButtonStyle = {
   backgroundColor: '#992323',
@@ -33,11 +25,9 @@ typoTheme = responsiveFontSizes(typoTheme);
 const Home = (): JSX.Element => {
   const MeTypist = (
     <ReactTypical
-      steps={
-        meTitles.reduce((acc: (string|number)[], title) => {
-          return acc.concat([title, 690]);
-        },[])
-      }
+      steps={meTitles.reduce((acc: (string | number)[], title) => {
+        return acc.concat([title, 690]);
+      }, [])}
       wrapper="p"
       loop={Infinity}
       className="typicalWrapper"
@@ -52,10 +42,7 @@ const Home = (): JSX.Element => {
             <ThemeProvider theme={typoTheme}>
               <Typography variant="h3" component="h2">
                 <Box fontWeight="fontWeightBold">
-                  Hi, I&apos;m
-                  {' '}
-                  <span className="text-lrred">Aaron</span>
-                  .
+                  Hi, I&apos;m <span className="text-lrred">Aaron</span>.
                 </Box>
               </Typography>
               <Typography variant="h6" component="h3" className="w-full">
@@ -63,13 +50,7 @@ const Home = (): JSX.Element => {
               </Typography>
             </ThemeProvider>
             <Button variant="outlined" sx={cvButtonStyle}>
-              <LinkMui
-                href="cv.pdf"
-                rel="noopener"
-                color="inherit"
-                underline="none"
-                target="_blank"
-              >
+              <LinkMui href="cv.pdf" rel="noopener" color="inherit" underline="none" target="_blank">
                 See My CV
               </LinkMui>
             </Button>
