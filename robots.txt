@@ -1,3 +1,9 @@
-# https://www.robotstxt.org/robotstxt.html
+# *
 User-agent: *
-Disallow:
+Allow: /
+
+# Host
+Host: https://lordronz.github.io/
+
+# Sitemaps
+Sitemap: https://lordronz.github.io/sitemap.xml
