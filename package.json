@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@deadcoder0904/react-typical": "^0.1.2",
-    "@emotion/react": "^11.5.0",
+    "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.3.0",
     "@mui/core": "^5.0.0-alpha.53",
     "@mui/icons-material": "^5.0.5",
