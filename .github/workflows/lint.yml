@@ -38,4 +38,4 @@ jobs:
           node-version: '14'
           cache: 'yarn'
       - run: yarn
-      - run: yarn format:check
+      - run: yarn format
