@@ -1,6 +1,5 @@
 module.exports = {
-  mode: 'jit',
-  purge: ['./src/**/*.{js,jsx,ts,tsx}'],
+  content: ['./src/**/*.{js,jsx,ts,tsx}'],
   darkMode: 'class', // or 'media' or 'class'
   theme: {
     extend: {
@@ -9,6 +8,7 @@ module.exports = {
       },
       colors: {
         lrred: '#eb2754',
+        lrmaroon: '#992323',
         'lrtext-white': '#ddd',
       },
       fill: {
