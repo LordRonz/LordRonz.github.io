@@ -41,7 +41,7 @@
     "@typescript-eslint/parser": "^5.7.0",
     "autoprefixer": "^10.4.0",
     "eslint": "7",
-    "eslint-config-next": "12.0.3",
+    "eslint-config-next": "12.0.7",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-simple-import-sort": "^7.0.0",
     "next-sitemap": "^1.6.203",
