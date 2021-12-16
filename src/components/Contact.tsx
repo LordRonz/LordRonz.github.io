@@ -35,17 +35,13 @@ const Contact = (): JSX.Element => {
 
   return (
     <Grid container direction="row" justifyContent="center" alignItems="center" spacing={3} id="contact">
-      {
-        socials.map(({label, link, icon}) => (
-          <Grid item key={label}>
-            <Link href={link} target="_blank" rel="noopener" aria-label={label}>
-              <IconContext.Provider value={{ size: '2em', style: { cursor: 'pointer' } }}>
-                {icon}
-              </IconContext.Provider>
-            </Link>
-          </Grid>
-        ))
-      }
+      {socials.map(({ label, link, icon }) => (
+        <Grid item key={label}>
+          <Link href={link} target="_blank" rel="noopener" aria-label={label}>
+            <IconContext.Provider value={{ size: '2em', style: { cursor: 'pointer' } }}>{icon}</IconContext.Provider>
+          </Link>
+        </Grid>
+      ))}
       <Grid item>
         <Tippy
           animation="scale-subtle"
