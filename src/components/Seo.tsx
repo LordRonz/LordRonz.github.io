@@ -5,7 +5,7 @@ const defaultMeta = {
   title: 'Aaron Christopher',
   siteName: process.env.NEXT_PUBLIC_HOSTNAME || 'lordronz.github.io',
   description: 'My GitHub Portfolio Webpage.',
-  url: `https://${process.env.NEXT_PUBLIC_HOSTNAME}` || 'https://lordronz.github.io',
+  url: process.env.NEXT_PUBLIC_HOSTNAME ? `https://${process.env.NEXT_PUBLIC_HOSTNAME}` : 'https://lordronz.github.io',
   image: '/logo512.png',
   type: 'website',
   robots: 'follow, index',
