@@ -3,9 +3,9 @@ import { useRouter } from 'next/router';
 
 const defaultMeta = {
   title: 'Aaron Christopher',
-  siteName: 'lordronz.github.io',
+  siteName: process.env.NEXT_PUBLIC_HOSTNAME || 'lordronz.github.io',
   description: 'My GitHub Portfolio Webpage.',
-  url: 'https://lordronz.github.io',
+  url: `https://${process.env.NEXT_PUBLIC_HOSTNAME}` || 'https://lordronz.github.io',
   image: '/logo512.png',
   type: 'website',
   robots: 'follow, index',
