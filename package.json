@@ -33,7 +33,7 @@
     "tippy.js": "^6.3.7"
   },
   "devDependencies": {
-    "@types/node": "17.0.0",
+    "@types/node": "17.0.1",
     "@types/react": "17.0.37",
     "@types/react-copy-to-clipboard": "^5.0.2",
     "@types/react-scroll": "^1.8.3",
