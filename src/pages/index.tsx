@@ -8,7 +8,7 @@ import Seo from '@/components/Seo';
 
 const Main: NextPage = () => {
   return (
-    <div className="bg-gray-900 body-font">
+    <div className='bg-gray-900 body-font'>
       <Seo />
       <Home />
       <About />
