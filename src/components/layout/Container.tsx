@@ -10,17 +10,17 @@ interface ComponentProp {
 }
 
 const Container = ({ id, title, subTitle, children }: ComponentProp): JSX.Element => (
-  <Grid container className="flex-grow py-12 text-lrtext-white" spacing={0} id={id}>
+  <Grid container className='flex-grow py-12 text-lrtext-white' spacing={0} id={id}>
     <Grid item xs={12}>
-      <Grid container justifyContent="center">
+      <Grid container justifyContent='center'>
         <Grid item>
-          <Typography variant="h2" component="h3">
-            <Box fontWeight="fontWeightBold" textAlign="center">
+          <Typography variant='h2' component='h3'>
+            <Box fontWeight='fontWeightBold' textAlign='center'>
               {title}
             </Box>
           </Typography>
-          <Typography variant="subtitle1" component="span">
-            <Box textAlign="center" fontStyle="italic">
+          <Typography variant='subtitle1' component='span'>
+            <Box textAlign='center' fontStyle='italic'>
               {subTitle}
             </Box>
           </Typography>

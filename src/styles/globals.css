@@ -4,8 +4,6 @@
 
 html,
 body {
-  padding: 0;
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
     Helvetica Neue, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -44,8 +42,13 @@ a {
   background-size: 100% 2px, 0 2px;
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
-  transition: 0.3s ease;
-  transition-property: background-size, color, background-color, border-color;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .animated-underline {
+    transition: 0.3s ease;
+    transition-property: background-size, color, background-color, border-color;
+  }
 }
 
 .animated-underline:hover,
@@ -57,5 +60,4 @@ a {
 
 .link {
   color: #eb2754;
-  cursor: pointer;
 }

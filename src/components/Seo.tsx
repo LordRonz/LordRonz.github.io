@@ -29,29 +29,29 @@ const Seo = (props: SeoProps) => {
   return (
     <Head>
       <title>{meta.title}</title>
-      <meta name="robots" content={meta.robots} />
-      <meta content={meta.description} name="description" />
-      <meta property="og:url" content={`${meta.url}${router.asPath}`} />
-      <link rel="canonical" href={`${meta.url}${router.asPath}`} />
+      <meta name='robots' content={meta.robots} />
+      <meta content={meta.description} name='description' />
+      <meta property='og:url' content={`${meta.url}${router.asPath}`} />
+      <link rel='canonical' href={`${meta.url}${router.asPath}`} />
       {/* Open Graph */}
-      <meta property="og:type" content={meta.type} />
-      <meta property="og:site_name" content={meta.siteName} />
-      <meta property="og:description" content={meta.description} />
-      <meta property="og:title" content={meta.title} />
-      <meta name="image" property="og:image" content={meta.image} />
+      <meta property='og:type' content={meta.type} />
+      <meta property='og:site_name' content={meta.siteName} />
+      <meta property='og:description' content={meta.description} />
+      <meta property='og:title' content={meta.title} />
+      <meta name='image' property='og:image' content={meta.image} />
       {/* Twitter */}
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:site" content="@lordronz" />
-      <meta name="twitter:title" content={meta.title} />
-      <meta name="twitter:description" content={meta.description} />
-      <meta name="twitter:image" content={meta.image} />
+      <meta name='twitter:card' content='summary_large_image' />
+      <meta name='twitter:site' content='@lordronz' />
+      <meta name='twitter:title' content={meta.title} />
+      <meta name='twitter:description' content={meta.description} />
+      <meta name='twitter:image' content={meta.image} />
       {/* Favicons */}
       {favicons.map((linkProps) => (
         <link key={linkProps.href} {...linkProps} />
       ))}
-      <meta name="msapplication-TileColor" content="#000000" />
-      <meta name="msapplication-TileImage" content="/favicon/mstile-150x150.png" />
-      <meta name="theme-color" content="#000000" />
+      <meta name='msapplication-TileColor' content='#000000' />
+      <meta name='msapplication-TileImage' content='/favicon/mstile-150x150.png' />
+      <meta name='theme-color' content='#000000' />
     </Head>
   );
 };
