@@ -6,7 +6,7 @@ import Contact from '@/components/Contact';
 const Footer = (): JSX.Element => (
   <Grid
     container
-    className='flex-grow py-4 text-lrtext-white'
+    className='flex-grow py-4 text-primary-50'
     spacing={0}
     sx={{ borderTop: 1, borderColor: '#eb2754' }}
     gap={2}

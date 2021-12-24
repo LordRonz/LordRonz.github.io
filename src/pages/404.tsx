@@ -7,17 +7,17 @@ import Seo from '@/components/Seo';
 
 const PageNotFound: NextPage = () => {
   return (
-    <div className='text-lrtext-white bg-gray-900 body-font'>
+    <div className='text-primary-300 bg-gray-900 body-font'>
       <Seo templateTitle='Page not found | LordRonz' />
       <Grid container className='flex-grow h-screen items-center text-center justify-center'>
         <Grid item xs={12}>
           <Grid container justifyContent='center'>
             <Zoom in style={{ transitionDelay: '200ms' }}>
               <Grid>
-                <Typography variant='h1' component='h1' className='text-lrred'>
+                <Typography variant='h1' component='h1' className='text-primary-300'>
                   <Box fontWeight='fontWeightBold'>404</Box>
                 </Typography>
-                <Typography variant='h5' component='h2' className='text-lrrwhite'>
+                <Typography variant='h5' component='h2' className='text-primary-50'>
                   <ReactTypical steps={['Page Not Found']} wrapper='p' className='typicalWrapper' />
                 </Typography>
               </Grid>
@@ -25,7 +25,7 @@ const PageNotFound: NextPage = () => {
           </Grid>
         </Grid>
         <Grid item justifyContent='center'>
-          <Typography variant='h6' component='h3' className='text-lrred'>
+          <Typography variant='h6' component='h3' className='text-primary-300'>
             <Box fontWeight='fontWeightBold'>
               <Link href='/'>
                 <a>
