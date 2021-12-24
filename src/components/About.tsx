@@ -39,7 +39,7 @@ const About = (): JSX.Element => {
     'OpenCV',
     'Linux',
     'Git',
-  ];
+  ] as const;
 
   const conceptList = [
     'Data Structure',
@@ -52,7 +52,7 @@ const About = (): JSX.Element => {
     'Machine Learning',
     'Image Processing',
     'Computer Vision',
-  ];
+  ] as const;
 
   return (
     <Container id='about' title='About me' subTitle='What a chad'>

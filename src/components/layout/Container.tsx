@@ -10,7 +10,7 @@ interface ComponentProp {
 }
 
 const Container = ({ id, title, subTitle, children }: ComponentProp): JSX.Element => (
-  <Grid container className='flex-grow py-12 text-lrtext-white' spacing={0} id={id}>
+  <Grid container className='flex-grow py-12 text-primary-50' spacing={0} id={id}>
     <Grid item xs={12}>
       <Grid container justifyContent='center'>
         <Grid item>

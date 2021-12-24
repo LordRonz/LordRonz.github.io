@@ -16,19 +16,19 @@ const socials = [
   {
     label: 'GitHub',
     link: 'https://github.com/LordRonz',
-    icon: <SiGithub className='text-lrtext-white transition-all duration-300 hover:text-lrred' />,
+    icon: <SiGithub className='text-primary-50 transition-all duration-300 hover:text-primary-300' />,
   },
   {
     label: 'GitLab',
     link: 'https://gitlab.com/lordronz',
-    icon: <SiGitlab className='text-lrtext-white transition-all duration-300 hover:text-lrred' />,
+    icon: <SiGitlab className='text-primary-50 transition-all duration-300 hover:text-primary-300' />,
   },
   {
     label: 'LinkedIn',
     link: 'https://www.linkedin.com/in/aaronchristopher69/',
-    icon: <SiLinkedin className='text-lrtext-white transition-all duration-300 hover:text-lrred' />,
+    icon: <SiLinkedin className='text-primary-50 transition-all duration-300 hover:text-primary-300' />,
   },
-];
+] as const;
 
 const Contact = (): JSX.Element => {
   const [copyStatus, setCopyStatus] = useState('Click to copy');
@@ -50,7 +50,7 @@ const Contact = (): JSX.Element => {
           content={
             <span className='inline-flex flex-col items-center p-2 bg-dark rounded-md shadow-md border-thin'>
               {copyStatus}
-              <span className='inline-block font-bold text-lrred'>{mail}</span>
+              <span className='inline-block font-bold text-primary-300'>{mail}</span>
             </span>
           }
         >
@@ -64,7 +64,7 @@ const Contact = (): JSX.Element => {
             >
               <span>
                 <IconContext.Provider value={{ size: '2.3em', style: { cursor: 'pointer' } }}>
-                  <FiMail className='text-lrtext-white transition-all duration-300 hover:text-lrred' />
+                  <FiMail className='text-primary-50 transition-all duration-300 hover:text-primary-300' />
                 </IconContext.Provider>
               </span>
             </CopyToClipboard>
