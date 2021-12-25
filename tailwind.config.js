@@ -1,3 +1,6 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
+const { fontFamily } = require('tailwindcss/defaultTheme');
+
 const withOpacity = (variableName) => {
   return ({ opacityValue }) => {
     if (opacityValue !== undefined) {
@@ -21,6 +24,9 @@ module.exports = {
   darkMode: 'class', // or 'media' or 'class'
   theme: {
     extend: {
+      fontFamily: {
+        primary: ['Roboto', ...fontFamily.sans],
+      },
       zIndex: {
         '-69': '-69',
       },

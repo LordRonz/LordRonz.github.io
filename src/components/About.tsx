@@ -73,7 +73,7 @@ const About = (): JSX.Element => {
                   spy
                   hashSpy
                   href='#contact'
-                  className='animated-underline link pb-0.5 cursor-pointer'
+                  className='animated-underline custom-link inline-flex items-center font-semibold focus:outline-none focus-visible:rounded focus-visible:ring focus-visible:ring-primary-500 border-dark border-b border-dotted hover:border-black/0 text-primary-200'
                 >
                   Reach me out
                 </Link>{' '}
