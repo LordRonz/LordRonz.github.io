@@ -8,7 +8,7 @@
     "export": "next export",
     "start": "next start",
     "lint": "next lint",
-    "tsc": "tsc --noEmit",
+    "tsc": "tsc --pretty --noEmit",
     "format": "prettier -w .",
     "format:check": "prettier -c ."
   },
