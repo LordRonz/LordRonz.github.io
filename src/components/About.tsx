@@ -19,41 +19,41 @@ const MeChip = ({ label }: { label: string }) => (
   />
 );
 
+const techList = [
+  'C/C++',
+  'Python',
+  'PHP',
+  'Javascript',
+  'Typescript',
+  'SQL',
+  'MongoDB',
+  'Django',
+  'Go',
+  'HTML',
+  'CSS',
+  'Node.js',
+  'React.js',
+  'Nginx',
+  'Docker',
+  'OpenCV',
+  'Linux',
+  'Git',
+] as const;
+
+const conceptList = [
+  'Data Structure',
+  'Object Oriented Programming',
+  'Design Pattern',
+  'Model View Controller',
+  'REST API',
+  'Reverse Proxy',
+  'Clean Architecture',
+  'Machine Learning',
+  'Image Processing',
+  'Computer Vision',
+] as const;
+
 const About = (): JSX.Element => {
-  const techList = [
-    'C/C++',
-    'Python',
-    'PHP',
-    'Javascript',
-    'Typescript',
-    'SQL',
-    'MongoDB',
-    'Django',
-    'Go',
-    'HTML',
-    'CSS',
-    'Node.js',
-    'React.js',
-    'Nginx',
-    'Docker',
-    'OpenCV',
-    'Linux',
-    'Git',
-  ] as const;
-
-  const conceptList = [
-    'Data Structure',
-    'Object Oriented Programming',
-    'Design Pattern',
-    'Model View Controller',
-    'REST API',
-    'Reverse Proxy',
-    'Clean Architecture',
-    'Machine Learning',
-    'Image Processing',
-    'Computer Vision',
-  ] as const;
-
   return (
     <Container id='about' title='About me' subTitle='What a chad'>
       <Grid item xs={12}>
