@@ -46,7 +46,7 @@ const socials = [
 ] as const;
 
 const Contact = (): JSX.Element => {
-  const [copyStatus, setCopyStatus] = useState('Click to copy');
+  const [copyStatus, setCopyStatus] = useState<string>('Click to copy');
 
   return (
     <Grid container direction='row' justifyContent='center' alignItems='center' spacing={3} id='contact'>
