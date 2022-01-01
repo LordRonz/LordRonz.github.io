@@ -8,7 +8,7 @@ import React, { useState } from 'react';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { IconContext } from 'react-icons';
 import { FiMail } from 'react-icons/fi';
-import { SiGithub, SiGitlab, SiHackerrank, SiLinkedin } from 'react-icons/si';
+import { SiGithub, SiGitlab, SiHackerrank, SiLeetcode, SiLinkedin, SiStackoverflow } from 'react-icons/si';
 
 const mail = 'christopher.19072@mhs.its.ac.id';
 
@@ -29,9 +29,19 @@ const socials = [
     icon: <SiHackerrank className='text-primary-50 transition-all duration-300 hover:text-primary-300' title='Hackerrank' />,
   },
   {
+    label: 'LeetCode',
+    link: 'https://leetcode.com/lordronz/',
+    icon: <SiLeetcode className='text-primary-50 transition-all duration-300 hover:text-primary-300' title='LeetCode' />,
+  },
+  {
     label: 'LinkedIn',
     link: 'https://www.linkedin.com/in/aaronchristopher69/',
     icon: <SiLinkedin className='text-primary-50 transition-all duration-300 hover:text-primary-300' title='LinkedIn' />,
+  },
+  {
+    label: 'Stack Overflow',
+    link: 'https://stackoverflow.com/users/12394982/lordronz',
+    icon: <SiStackoverflow className='text-primary-50 transition-all duration-300 hover:text-primary-300' title='StackOverflow' />,
   },
 ] as const;
 
