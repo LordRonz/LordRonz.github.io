@@ -1,43 +1,28 @@
-import { ReactTypical } from '@deadcoder0904/react-typical';
-import { Box, Grid, Typography, Zoom } from '@mui/material';
 import type { NextPage } from 'next';
-import Link from 'next/link';
 
+import ArrowLink from '@/components/links/ArrowLink';
 import Seo from '@/components/Seo';
 
-const PageNotFound: NextPage = () => {
-  return (
-    <div className='text-primary-300 bg-gray-900 body-font'>
-      <Seo templateTitle='Page not found | LordRonz' />
-      <Grid container className='flex-grow h-screen items-center text-center justify-center'>
-        <Grid item xs={12}>
-          <Grid container justifyContent='center'>
-            <Zoom in style={{ transitionDelay: '200ms' }}>
-              <Grid>
-                <Typography variant='h1' component='h1' className='text-primary-300'>
-                  <Box fontWeight='fontWeightBold'>404</Box>
-                </Typography>
-                <Typography variant='h5' component='h2' className='text-primary-50'>
-                  <ReactTypical steps={['Page Not Found']} wrapper='p' className='typicalWrapper' />
-                </Typography>
-              </Grid>
-            </Zoom>
-          </Grid>
-        </Grid>
-        <Grid item justifyContent='center'>
-          <Typography variant='h6' component='h3' className='text-primary-300'>
-            <Box fontWeight='fontWeightBold'>
-              <Link href='/'>
-                <a>
-                  <span className='animated-underline link cursor-pointer pb-0.5'>Back to Home</span>
-                </a>
-              </Link>
-            </Box>
-          </Typography>
-        </Grid>
-      </Grid>
-    </div>
-  );
-};
+const NotFound: NextPage = () => (
+  <>
+    <Seo templateTitle='Not Found' />
+    <main>
+      <section className='bg-black text-primary-50'>
+        <div className='layout flex flex-col justify-center items-center min-h-screen text-center gap-y-40'>
+          <div className='flex flex-col gap-y-4'>
+            <h1 className='text-8xl text-primary-300'>404</h1>
+            <h2>Page Not Found</h2>
+          </div>
 
-export default PageNotFound;
+          <p className='text-xl text-primary-200'>
+            <ArrowLink href='/' openNewTab={false} direction='left'>
+              Back To Home
+            </ArrowLink>
+          </p>
+        </div>
+      </section>
+    </main>
+  </>
+);
+
+export default NotFound;
