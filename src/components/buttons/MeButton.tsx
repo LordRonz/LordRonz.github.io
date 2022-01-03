@@ -2,9 +2,9 @@ import { CSSProperties } from 'react';
 
 import style from '@/styles/MeButton.module.css';
 
-interface MeButtonProp {
+export type MeButtonProp = {
   children: JSX.Element | JSX.Element[];
-}
+};
 
 const bgStyle: CSSProperties = {
   filter: 'drop-shadow(0 4px 20px rgba(0, 0, 0, 0.1))',
