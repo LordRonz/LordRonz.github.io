@@ -41,7 +41,12 @@ const socials = [
   {
     label: 'Stack Overflow',
     link: 'https://stackoverflow.com/users/12394982/lordronz',
-    icon: <SiStackoverflow className='text-primary-50 transition-all duration-300 hover:text-primary-300' title='StackOverflow' />,
+    icon: (
+      <SiStackoverflow
+        className='text-primary-50 transition-all duration-300 hover:text-primary-300'
+        title='StackOverflow'
+      />
+    ),
   },
 ] as const;
 

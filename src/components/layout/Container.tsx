@@ -1,13 +1,11 @@
 import { Box, Grid, Typography } from '@mui/material';
-import PropTypes from 'prop-types';
-import React from 'react';
 
-interface ComponentProp {
+export type ComponentProp = {
   id: string;
   title: string;
   subTitle: string;
   children: JSX.Element | JSX.Element[];
-}
+};
 
 const Container = ({ id, title, subTitle, children }: ComponentProp): JSX.Element => (
   <Grid container className='flex-grow py-12 text-primary-50' spacing={0} id={id}>
@@ -31,12 +29,5 @@ const Container = ({ id, title, subTitle, children }: ComponentProp): JSX.Elemen
     {children}
   </Grid>
 );
-
-Container.propTypes = {
-  id: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  subTitle: PropTypes.string.isRequired,
-  children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
-};
 
 export default Container;

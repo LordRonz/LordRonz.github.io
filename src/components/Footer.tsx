@@ -4,12 +4,7 @@ import React from 'react';
 import Contact from '@/components/Contact';
 
 const Footer = (): JSX.Element => (
-  <Grid
-    container
-    className='flex-grow py-4 text-primary-50 border-t border-primary-300'
-    spacing={0}
-    gap={2}
-  >
+  <Grid container className='flex-grow py-4 text-primary-50 border-t border-primary-300' spacing={0} gap={2}>
     <Grid item xs={12}>
       <Grid container justifyContent='center'>
         <Grid item>
