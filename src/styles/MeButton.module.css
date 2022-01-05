@@ -1,16 +1,3 @@
-.svg:hover .bg {
-  fill: rgba(255, 0, 255, 0.2);
-}
-
-.borderEffect {
-  stroke-dasharray: 150 600;
-  stroke-dashoffset: 150;
-}
-
-.svg:hover .borderEffect {
-  stroke-dashoffset: -600;
-}
-
 .foreignObj .content {
   font-family: Helvetica, Inter, Arial, sans-serif;
   font-size: 14px;
