@@ -1,5 +1,3 @@
-import style from '@/styles/MeButton.module.css';
-
 export type MeButtonProp = {
   children: JSX.Element | JSX.Element[];
 };
@@ -15,8 +13,8 @@ const MeButton = ({ children }: MeButtonProp) => {
         points='0,50 0,0 150,0 150,50'
         className='fill-transparent transition-all duration-800 delay-0 ease-default pointer-events-none stroke-lrred stroke-2 [stroke-dasharray:150_600] [stroke-dashoffset:150] group-hover:[stroke-dashoffset:-600]'
       />
-      <foreignObject x='0' y='0' width='150' height='50' className={`${style.foreignObj} pointer-events-none`}>
-        <div className={style.content}>{children}</div>
+      <foreignObject x='0' y='0' width='150' height='50' className='pointer-events-none'>
+        <div className='font-[Helvetica,Inter,Arial,sans-serif]text-[14px] font-extralight h-full flex items-center justify-center text-primary-300 uppercase'>{children}</div>
       </foreignObject>
     </svg>
   );
