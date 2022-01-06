@@ -73,7 +73,7 @@ const Home = (): JSX.Element => {
             <span>
               <Typography>
                 <Box fontWeight='fontWeightBold'>
-                  <ExpandMoreIcon className='mx-[5px]'/>
+                  <ExpandMoreIcon className='mx-[5px]' />
                   LESGO
                 </Box>
               </Typography>
