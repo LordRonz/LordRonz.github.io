@@ -1,9 +1,9 @@
-import type { GetStaticPaths, GetStaticProps, NextPage } from "next";
-import type { ParsedUrlQuery } from "querystring";
-import { ReactNode, useEffect } from "react";
+import type { GetStaticPaths, GetStaticProps, NextPage } from 'next';
+import type { ParsedUrlQuery } from 'querystring';
+import { ReactNode, useEffect } from 'react';
 
-import Seo from "@/components/Seo";
-import shortlinks from "@/data/shortlinks";
+import Seo from '@/components/Seo';
+import shortlinks from '@/data/shortlinks';
 
 type LinkParams = {
   param: string;
@@ -11,7 +11,7 @@ type LinkParams = {
 
 export const getStaticPaths: GetStaticPaths = () => {
   const paths = Object.keys(shortlinks).map((param) => ({
-    params: {param}
+    params: { param },
   }));
 
   return { paths, fallback: false };
@@ -20,7 +20,7 @@ export const getStaticPaths: GetStaticPaths = () => {
 export const getStaticProps: GetStaticProps = ({ params }) => {
   const { param } = params as LinkParams;
   const link = shortlinks[param];
-  return { props: {name : param, link} };
+  return { props: { name: param, link } };
 };
 
 type PageProp = {
