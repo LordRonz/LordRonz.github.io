@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://lordronz.github.io/
+Host: https://lordronz.github.io
 
 # Sitemaps
 Sitemap: https://lordronz.github.io/sitemap.xml
