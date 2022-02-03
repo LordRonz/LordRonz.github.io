@@ -15,32 +15,32 @@ const mail = 'christopher.19072@mhs.its.ac.id';
 const socials = [
   {
     label: 'GitHub',
-    link: 'https://github.com/LordRonz',
+    link: 'https://lr-link.vercel.app/github',
     icon: <SiGithub className='text-primary-50 transition-all duration-300 hover:text-primary-300' title='GitHub' />,
   },
   {
     label: 'GitLab',
-    link: 'https://gitlab.com/lordronz',
+    link: 'https://lr-link.vercel.app/gitlab',
     icon: <SiGitlab className='text-primary-50 transition-all duration-300 hover:text-primary-300' title='GitLab' />,
   },
   {
     label: 'Hackerrank',
-    link: 'https://www.hackerrank.com/LordRonz',
+    link: 'https://lr-link.vercel.app/hackerrank',
     icon: <SiHackerrank className='text-primary-50 transition-all duration-300 hover:text-primary-300' title='Hackerrank' />,
   },
   {
     label: 'LeetCode',
-    link: 'https://leetcode.com/lordronz/',
+    link: 'https://lr-link.vercel.app/leetcode',
     icon: <SiLeetcode className='text-primary-50 transition-all duration-300 hover:text-primary-300' title='LeetCode' />,
   },
   {
     label: 'LinkedIn',
-    link: 'https://www.linkedin.com/in/aaronchristopher69/',
+    link: 'https://lr-link.vercel.app/linkedin',
     icon: <SiLinkedin className='text-primary-50 transition-all duration-300 hover:text-primary-300' title='LinkedIn' />,
   },
   {
     label: 'Stack Overflow',
-    link: 'https://stackoverflow.com/users/12394982/lordronz',
+    link: 'https://lr-link.vercel.app/stackoverflow',
     icon: (
       <SiStackoverflow
         className='text-primary-50 transition-all duration-300 hover:text-primary-300'
