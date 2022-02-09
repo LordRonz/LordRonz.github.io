@@ -2507,10 +2507,10 @@ natural-compare@^1.4.0:
   resolved "https://registry.yarnpkg.com/natural-compare/-/natural-compare-1.4.0.tgz#4abebfeed7541f2c27acfb29bdbbd15c8d5ba4f7"
   integrity sha1-Sr6/7tdUHywnrPspvbvRXI1bpPc=
 
-next-sitemap@^2.1.11:
-  version "2.1.11"
-  resolved "https://registry.yarnpkg.com/next-sitemap/-/next-sitemap-2.1.11.tgz#a068ab6cbebc7ee4955da7657727c202b659e71f"
-  integrity sha512-Sm3GNR5BZgnoJY+MRFihlgTRC4ixIZmjh+xm10zxjKAVl+Ve340+abglkrfhUOHs443eqAy4ydSjPnu3AQlEsw==
+next-sitemap@^2.1.13:
+  version "2.1.13"
+  resolved "https://registry.yarnpkg.com/next-sitemap/-/next-sitemap-2.1.13.tgz#1772e9f0eae07d4b1c3194654b84e6579c05a95c"
+  integrity sha512-gybyH7ylRiwgRakI81++Hx6a+LUl7tkcmcsjNJA0L0t95lk3gc0OYHH9siV+JMdytd4lag5ue8E8iMGKJ06Q/Q==
   dependencies:
     "@corex/deepmerge" "^2.6.148"
     minimist "^1.2.5"
