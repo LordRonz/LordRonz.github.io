@@ -21,7 +21,7 @@
     "@mui/core": "^5.0.0-alpha.53",
     "@mui/icons-material": "^5.4.2",
     "@mui/material": "^5.4.2",
-    "@mui/system": "^5.4.2",
+    "@mui/system": "^5.4.3",
     "@tippyjs/react": "^4.2.6",
     "next": "12.1.0",
     "next-themes": "^0.0.15",
