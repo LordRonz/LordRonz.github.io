@@ -48,7 +48,7 @@
     "eslint-config-next": "12.1.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-simple-import-sort": "^7.0.0",
-    "local-cypress": "^1.2.3",
+    "local-cypress": "1.2.4",
     "next-sitemap": "^2.5.10",
     "postcss": "^8.4.12",
     "prettier": "^2.6.0",
