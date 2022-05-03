@@ -7,6 +7,7 @@
     "postbuild": "next-sitemap",
     "export": "next export",
     "start": "next start",
+    "deduplicate": "npx yarn-deduplicate && yarn install",
     "lint": "next lint",
     "tsc": "tsc --pretty --noEmit",
     "format": "prettier -w .",
