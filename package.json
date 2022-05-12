@@ -41,7 +41,7 @@
     "@types/react": "18.0.8",
     "@types/react-copy-to-clipboard": "^5.0.2",
     "@types/react-scroll": "^1.8.3",
-    "@typescript-eslint/eslint-plugin": "^5.22.0",
+    "@typescript-eslint/eslint-plugin": "^5.23.0",
     "@typescript-eslint/parser": "^5.22.0",
     "autoprefixer": "^10.4.7",
     "cypress": "^9.6.1",
