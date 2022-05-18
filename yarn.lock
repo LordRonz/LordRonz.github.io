@@ -305,10 +305,28 @@
     "@mui/utils" "^5.7.0"
     prop-types "^15.8.1"
 
+"@mui/private-theming@^5.8.0":
+  version "5.8.0"
+  resolved "https://registry.yarnpkg.com/@mui/private-theming/-/private-theming-5.8.0.tgz#7d927e7e12616dc10b0dcbe665df2c00ed859796"
+  integrity sha512-MjRAneTmCKLR9u2S4jtjLUe6gpHxlbb4g2bqpDJ2PdwlvwsWIUzbc/gVB4dvccljXeWxr5G2M/Co2blXisvFIw==
+  dependencies:
+    "@babel/runtime" "^7.17.2"
+    "@mui/utils" "^5.8.0"
+    prop-types "^15.8.1"
+
 "@mui/styled-engine@^5.7.0":
   version "5.7.0"
   resolved "https://registry.yarnpkg.com/@mui/styled-engine/-/styled-engine-5.7.0.tgz#59e4937cebab5c72b080914c7071a41489f6f416"
   integrity sha512-JTvp+6lbAXYqgf/YInwR+hd4F8Fhg5PxMBwKTFsdKbaZFvyBD95hzKcxRmO9Y/NdjwFYWm5bBhcZAT4r2g1kZA==
+  dependencies:
+    "@babel/runtime" "^7.17.2"
+    "@emotion/cache" "^11.7.1"
+    prop-types "^15.8.1"
+
+"@mui/styled-engine@^5.8.0":
+  version "5.8.0"
+  resolved "https://registry.yarnpkg.com/@mui/styled-engine/-/styled-engine-5.8.0.tgz#89ed42efe7c8749e5a60af035bc5d3a6bea362bf"
+  integrity sha512-Q3spibB8/EgeMYHc+/o3RRTnAYkSl7ROCLhXJ830W8HZ2/iDiyYp16UcxKPurkXvLhUaILyofPVrP3Su2uKsAw==
   dependencies:
     "@babel/runtime" "^7.17.2"
     "@emotion/cache" "^11.7.1"
@@ -328,6 +346,20 @@
     csstype "^3.0.11"
     prop-types "^15.8.1"
 
+"@mui/system@^5.8.0":
+  version "5.8.0"
+  resolved "https://registry.yarnpkg.com/@mui/system/-/system-5.8.0.tgz#5e8fe9016727863eb1b467ed44398a9bab25a7a2"
+  integrity sha512-1tEj2S59RjlZ/6JMJMUktQDbV2ev7hyGXqO7dRRUQ7nOJi9qHmCFP0uXj3YS6LbM6hVasgYXJg8GBjbEtfTJvg==
+  dependencies:
+    "@babel/runtime" "^7.17.2"
+    "@mui/private-theming" "^5.8.0"
+    "@mui/styled-engine" "^5.8.0"
+    "@mui/types" "^7.1.3"
+    "@mui/utils" "^5.8.0"
+    clsx "^1.1.1"
+    csstype "^3.0.11"
+    prop-types "^15.8.1"
+
 "@mui/types@^7.1.3":
   version "7.1.3"
   resolved "https://registry.yarnpkg.com/@mui/types/-/types-7.1.3.tgz#d7636f3046110bcccc63e6acfd100e2ad9ca712a"
@@ -337,6 +369,17 @@
   version "5.7.0"
   resolved "https://registry.yarnpkg.com/@mui/utils/-/utils-5.7.0.tgz#7e96df6b871f4d3da13f26a623d73ddf9a11b19c"
   integrity sha512-uWpDIEXl7bWYkJwKQQ4Rdhc2dcotVETRYuLy29V6qLYZyAbs7AMKwDDz0XKy3RMNmU7S2R/jEeSb9xjXscQUHQ==
+  dependencies:
+    "@babel/runtime" "^7.17.2"
+    "@types/prop-types" "^15.7.5"
+    "@types/react-is" "^16.7.1 || ^17.0.0"
+    prop-types "^15.8.1"
+    react-is "^17.0.2"
+
+"@mui/utils@^5.8.0":
+  version "5.8.0"
+  resolved "https://registry.yarnpkg.com/@mui/utils/-/utils-5.8.0.tgz#4b1d19cbcf70773283375e763b7b3552b84cb58f"
+  integrity sha512-7LgUtCvz78676iC0wpTH7HizMdCrTphhBmRWimIMFrp5Ph6JbDFVuKS1CwYnWWxRyYKL0QzXrDL0lptAU90EXg==
   dependencies:
     "@babel/runtime" "^7.17.2"
     "@types/prop-types" "^15.7.5"
