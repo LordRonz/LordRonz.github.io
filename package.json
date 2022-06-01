@@ -37,12 +37,12 @@
     "tippy.js": "^6.3.7"
   },
   "devDependencies": {
-    "@types/node": "17.0.36",
+    "@types/node": "17.0.38",
     "@types/react": "18.0.8",
     "@types/react-copy-to-clipboard": "^5.0.2",
     "@types/react-scroll": "^1.8.3",
-    "@typescript-eslint/eslint-plugin": "^5.26.0",
-    "@typescript-eslint/parser": "^5.26.0",
+    "@typescript-eslint/eslint-plugin": "^5.27.0",
+    "@typescript-eslint/parser": "^5.27.0",
     "autoprefixer": "^10.4.7",
     "cypress": "^9.7.0",
     "eslint": "8.16.0",
