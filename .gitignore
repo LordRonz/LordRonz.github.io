@@ -4,6 +4,13 @@
 /node_modules
 /.pnp
 .pnp.js
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
 
 # testing
 /coverage
@@ -38,8 +45,14 @@ yarn-error.log*
 
 # next-sitemap
 robots.txt
-sitemap.xml
+sitemap*.xml
 
 # cypress
 cypress/videos
 cypress/screenshots
+
+# coveralls
+.coveralls.yml
+
+# storybook
+storybook-static
