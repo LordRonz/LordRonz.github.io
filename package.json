@@ -20,7 +20,7 @@
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
     "@mui/core": "^5.0.0-alpha.53",
-    "@mui/icons-material": "^5.6.2",
+    "@mui/icons-material": "^5.13.7",
     "@mui/material": "^5.7.0",
     "@mui/system": "^5.7.0",
     "@tippyjs/react": "^4.2.6",
